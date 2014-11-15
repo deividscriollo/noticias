@@ -29,6 +29,7 @@
 	<script src="assets/js/jquery.tweet.js"></script>
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
 	<script src="assets/js/application.js"></script>
+	<script src="js/audios.js"></script>
 	<!--[if (gte IE 6)&(lte IE 8)]>
 	<script src="selectivizr.js"></script>
 	<![endif]-->
@@ -45,6 +46,17 @@
 <header>
 <!-- Navbar
 ================================================== -->
+<audio src="audios/inicio.mp3" type="audio/mpeg" id="audioInicio"></audio>
+<audio src="audios/tecnologia.mp3" type="audio/mpeg" id="audioTecnologia"></audio>
+<audio src="audios/ciencia.mp3" type="audio/mpeg" id="audioCiencia"></audio>
+<audio src="audios/variedades.mp3" type="audio/mpeg" id="audioVariedades"></audio>
+<audio src="audios/ropa_inteligente.mp3" type="audio/mpeg" id="audioRopa_inteligente"></audio>
+<audio src="audios/en_el_catalogo.mp3" type="audio/mpeg" id="audioEn_el_catalogo"></audio>
+<audio src="audios/descubrimientos.mp3" type="audio/mpeg" id="audioDescubrimientos"></audio>
+<audio src="audios/cientificos.mp3" type="audio/mpeg" id="audioCientificos"></audio>
+<audio src="audios/parque_yasuni.mp3" type="audio/mpeg" id="audioParque_yasuni"></audio>
+<audio src="audios/yasuni.mp3" type="audio/mpeg" id="audioYasuni"></audio>
+
 <div class="navbar navbar-fixed-top" style="background: red!important;">
 	<div class="navbar-inner">
 		<div class="container">
@@ -57,13 +69,13 @@
 			<div>
 				<nav>
 				<ul class="nav topnav">
-					<li class="dropdown success ">
+					<li class="dropdown success " id="inicio" data-audio="audioInicio">
 					<a href="index.html"><i class="icon-home icon-white"></i> INICIO</a></li>
-					<li class="dropdown primary active">
+					<li class="dropdown primary active" id="tecnologia" data-audio="audioTecnologia">
 					<a href="tecnologia.html"><i class="icon-star icon-white"></i> TECNOLOGÍA</a></li>
-					<li class="dropdown danger">
+					<li class="dropdown danger" id="ciencia" data-audio="audioCiencia">
 					<a href="ciencia.html"><i class="icon-leaf icon-white"></i> CIENCIA</a></li>
-					<li class="dropdown inverse">
+					<li class="dropdown inverse" id="variedades" data-audio="audioVariedades">
 					<a href="variedad.html"><i class="icon-camera icon-white"></i> VARIEDADES</a></li>
 				</ul>
 				</nav>
@@ -101,7 +113,7 @@
 					<div class="carousel-inner">
 						<div class="item active">
 							<div class="testimonial">
-								<img src="assets/img/gal1.fw.png" alt="" />
+								<img src="assets/img/gal1.fw.png" alt=""  />
 								<blockquote>
 									<p>
 										 Buena Alimentacion, cuando hablamos de colores generalmente encontramos mayor variedad en frutas y hortalizas.
@@ -132,8 +144,8 @@
 			 <ul class="thumbnails">
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/1.fw.png" alt="" />
-							<div class="caption">
+							<img src="assets/img/tecnologia/1.fw.png" alt="" id="ropa_inteligente" data-audio="audioRopa_inteligente" />
+							<div class="caption" id="en_el_catalogo" data-audio="audioEn_el_catalogo">
 								<h3 class="heading-success" >Crean Ropa Inteligente</h3>
 								<p>
 									En el catálogo de un operador de telefonía podemos esperar encontrar exclusivamente a teléfonos inteligentes y dispositivos similares...
@@ -146,8 +158,8 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/3.fw.png" alt="" />
-							<div class="caption">
+							<img src="assets/img/tecnologia/3.fw.png" alt="" id="descubrimientos" data-audio="audioDescubrimientos" />
+							<div class="caption" id="cientificos" data-audio="audioCientificos">
 								<h3 class="heading-success" >Descubrimiento</h3>
 								<p>
 									Científicos de la Universidad de Columbia han dado un paso importante en la lucha contra un problema estético ...
@@ -160,11 +172,11 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/2.fw.png" alt="" />
-							<div class="caption">
+							<img src="assets/img/tecnologia/2.fw.png" alt="" id="parque_yasuni" data-audio="audioParque_yasuni"/>
+							<div class="caption" id="yasuni" data-audio="audioYasuni">
 								<h3 class="heading-success" >Parque Nacional Yasuni ITT</h3>
 								<p>
-									En el catálogo de un operador de telefonía podemos esperar encontrar exclusivamente a teléfonos inteligentes y dispositivos similares...
+									De acuerdo a estudios científicos, el Parque Yasuní ubicado en la Región amazónica ecuatoriana, en las provincias de Orellana y Pastaza, es la región de mayor diversidad biológica del mundo.....
 								</p>
 								<p>
 									<a href="#" class="btn btn-success"> <span class="m-icon-big-swapright m-icon-white"></span></a>

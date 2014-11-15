@@ -29,6 +29,7 @@
 	<script src="assets/js/jquery.tweet.js"></script>
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
 	<script src="assets/js/application.js"></script>
+	<script src="js/audios.js"></script>
 	<!--[if (gte IE 6)&(lte IE 8)]>
 	<script src="selectivizr.js"></script>
 	<![endif]-->
@@ -45,6 +46,16 @@
 <header>
 <!-- Navbar
 ================================================== -->
+<audio src="audios/inicio.mp3" type="audio/mpeg" id="audioInicio"></audio>
+<audio src="audios/tecnologia.mp3" type="audio/mpeg" id="audioTecnologia"></audio>
+<audio src="audios/ciencia.mp3" type="audio/mpeg" id="audioCiencia"></audio>
+<audio src="audios/variedades.mp3" type="audio/mpeg" id="audioVariedades"></audio>
+<audio src="audios/viber.mp3" type="audio/mpeg" id="audioViber"></audio>
+<audio src="audios/rakuten.mp3" type="audio/mpeg" id="audioRakuten"></audio>
+<audio src="audios/red_5g.mp3" type="audio/mpeg" id="audioRed_5g"></audio>
+<audio src="audios/mudarse_correa.mp3" type="audio/mpeg" id="audioMudarse_correa"></audio>
+<audio src="audios/windows_xp.mp3" type="audio/mpeg" id="audioWindows_xp"></audio>
+<audio src="audios/microsoft.mp3" type="audio/mpeg" id="audioMicrosoft"></audio>
 <div class="navbar navbar-fixed-top" style="background: red!important;">
 	<div class="navbar-inner">
 		<div class="container">
@@ -57,13 +68,15 @@
 			<div>
 				<nav>
 				<ul class="nav topnav">
-					<li class="dropdown success active">
+					<li class="dropdown success active" id="inicio" data-audio="audioInicio">
 					<a href="index.html"><i class="icon-home icon-white"></i> INICIO</a></li>
-					<li class="dropdown primary">
+					
+					<li class="dropdown primary" id="tecnologia" data-audio="audioTecnologia">
 					<a href="tecnologia.html"><i class="icon-star icon-white"></i> TECNOLOGÍA</a></li>
-					<li class="dropdown danger">
+					<li class="dropdown danger" id="ciencia" data-audio="audioCiencia">
 					<a href="ciencia.html"><i class="icon-leaf icon-white"></i> CIENCIA</a></li>
-					<li class="dropdown inverse">
+					
+					<li class="dropdown inverse" id="variedades" data-audio="audioVariedades">
 					<a href="variedad.html"><i class="icon-camera icon-white"></i> VARIEDADES</a></li>
 				</ul>
 				</nav>
@@ -85,7 +98,6 @@
 						<img src="assets/img/slides/flexslider/img1.jpg" alt="" />
 						<div class="flex-caption primary">
 							<h3>Noticias</h3>
-							
 						</div>
 						</li>
 						<li data-thumb="assets/img/slides/flexslider/img2.jpg">
@@ -168,9 +180,9 @@
 				<div class="row">				
 					<div class="span3">
 						<div class="well well-primary box">
-							<img src="assets/img/icons/box-1-white.png" alt="" />
+							<img src="assets/img/icons/box-1-white.png" alt="" id="viber" data-audio="audioViber" />
 							<h3>COMPRA VIBER</h3>
-							<p>
+							<p id="rakuten" data-audio="audioRakuten">
 								 Rakuten, el gigante japonés de comercio electrónico
 
 								(  una especie de Amazon local) ha comprado Viber
@@ -181,9 +193,9 @@
 					</div>
 					<div class="span3">
 						<div class="well well-success box">
-							<img src="assets/img/icons/box-2-white.png" alt="" />
+							<img src="assets/img/icons/box-2-white.png" alt="" id="red_5g" data-audio="audioRed_5g" />
 							<h3>RED 5G</h3>
-							<p>
+							<p id="mudarse_correa" data-audio="audioMudarse_correa">
 								 Mudarse a Corea del Sur en el año 2020 será una muy buena idea. El Ministerio de Educación, Ciencia y Tecnología del país ha anunciado que se invertirán $1500 millones de dólares para desarrollar una nueva tecnología 5G
 							</p>
 							
@@ -191,9 +203,9 @@
 					</div>
 					<div class="span3">
 						<div class="well well-warning box">
-							<img src="assets/img/icons/box-3-white.png" alt="" />
+							<img src="assets/img/icons/box-3-white.png" alt="" id="windows_xp" data-audio="audioWindows_xp" />
 							<h3>WINDOWS XP</h3>
-							<p>
+							<p id="microsoft" data-audio="audioMicrosoft">
 								 Microsoft hace tiempo que nos viene avisando que en este año 2014 cerrará por completo la puerta a Windows XP tras más de 12 años de servicio.
 							</p>
 							

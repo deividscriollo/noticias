@@ -29,6 +29,7 @@
 	<script src="assets/js/jquery.tweet.js"></script>
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
 	<script src="assets/js/application.js"></script>
+	<script src="js/audios.js"></script>
 	<!--[if (gte IE 6)&(lte IE 8)]>
 	<script src="selectivizr.js"></script>
 	<![endif]-->
@@ -45,6 +46,16 @@
 <header>
 <!-- Navbar
 ================================================== -->
+<audio src="audios/inicio.mp3" type="audio/mpeg" id="audioInicio"></audio>
+<audio src="audios/tecnologia.mp3" type="audio/mpeg" id="audioTecnologia"></audio>
+<audio src="audios/ciencia.mp3" type="audio/mpeg" id="audioCiencia"></audio>
+<audio src="audios/variedades.mp3" type="audio/mpeg" id="audioVariedades"></audio>
+<audio src="audios/polo.mp3" type="audio/mpeg" id="audioPolo"></audio>
+<audio src="audios/polo_pro.mp3" type="audio/mpeg" id="audioPolo_pro"></audio>
+<audio src="audios/tecnologiaPotable.mp3" type="audio/mpeg" id="audioTecnologiaPotable"></audio>
+<audio src="audios/tecnologia_potable.mp3" type="audio/mpeg" id="audioTecnologia_potable"></audio>
+<audio src="audios/vuelo.mp3" type="audio/mpeg" id="audioVuelo"></audio>
+<audio src="audios/vuelo_aves.mp3" type="audio/mpeg" id="audioVuelo_aves"></audio>
 <div class="navbar navbar-fixed-top" style="background: red!important;">
 	<div class="navbar-inner">
 		<div class="container">
@@ -57,13 +68,13 @@
 			<div>
 				<nav>
 				<ul class="nav topnav">
-					<li class="dropdown success ">
+					<li class="dropdown success " id="inicio" data-audio="audioInicio">
 					<a href="index.html"><i class="icon-home icon-white"></i> INICIO</a></li>
-					<li class="dropdown primary ">
+					<li class="dropdown primary" id="tecnologia" data-audio="audioTecnologia">
 					<a href="tecnologia.html"><i class="icon-star icon-white"></i> TECNOLOGÍA</a></li>
-					<li class="dropdown danger">
+					<li class="dropdown danger " id="ciencia" data-audio="audioCiencia">
 					<a href="ciencia.html"><i class="icon-leaf icon-white"></i> CIENCIA</a></li>
-					<li class="inverse active">
+					<li class="dropdown inverse active" id="variedades" data-audio="audioVariedades">
 					<a href="variedad.html"><i class="icon-camera icon-white"></i> VARIEDADES</a></li>
 				</ul>
 				</nav>
@@ -132,11 +143,11 @@
 			 <ul class="thumbnails">
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/7.fw.png" alt="" />
-							<div class="caption">
-								<h3 class="heading-success" >Crean Ropa Inteligente</h3>
+							<img src="assets/img/tecnologia/7.fw.png" alt="" id="polo" data-audio="audioPolo"/>
+							<div class="caption" id="polo_pro" data-audio="audioPolo_pro">
+								<h3 class="heading-success" >Problemas en el Polo</h3>
 								<p>
-									Si piensas en el Polo Norte como una superficie sólida de hielo vas a llevarte una sorpresa. Este mes se ha derretido y es ahora un enorme lago de agua muy, muy fría. Suena terrible, pero en realidad no es tan serio como en principio parece....
+									Si piensas en el Polo Norte como una superficie sólida de hielo vas a llevarte una sorpresa. Este mes se ha derretido y es ahora un enorme lago de agua muy, muy fría. Suena terrible, pero en realidad no es tan serio....
 								</p>
 								<p>
 									<a href="#" class="btn btn-success"> <span class="m-icon-big-swapright m-icon-white"></span></a>
@@ -146,8 +157,8 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/8.fw.png" alt="" />
-							<div class="caption">
+							<img src="assets/img/tecnologia/8.fw.png" alt="" id="tecnologiaPotable" data-audio="audioTecnologiaPotable" />
+							<div class="caption" id="tecnologia_potable" data-audio="audioTecnologia_potable">
 								<h3 class="heading-success" >Descubrimiento</h3>
 								<p>
 									Uno de los campos de la nanotecnología donde más se ha investigado es en el de usar micropárticulas de sustancias como el dióxido de titanio como agentes limpiadores del agua...
@@ -160,9 +171,9 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/9.fw.png" alt="" />
-							<div class="caption">
-								<h3 class="heading-success" >Parque Nacional Yasuni ITT</h3>
+							<img src="assets/img/tecnologia/9.fw.png" alt="" id="vuelo" data-audio="audioVuelo" />
+							<div class="caption" id="vuelo_aves" data-audio="audioVuelo_aves">
+								<h3 class="heading-success" >Vuelo de Aves</h3>
 								<p>
 									Un grupo de investigadores británicos ha dado con la respuesta científica a uno de los fenómenos más curiosos que a veces vemos surcar el cielo: bandadas de pájaros en formación en V....
 								</p>
