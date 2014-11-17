@@ -1771,15 +1771,17 @@ ul.portfolio-area li {
 .texto {
 		border:1px solid #808080;
 		font-family:Arial;
-		font-size:14px;
+		font-size:20px;
 		overflow:hidden;
 		padding:5px;
-		width:300px;
+		
 		display:none;
-		transition: 0.5s ease;
+		transform: scale(1.1);
+		text-align: justify;
+
 	}
-	.texto .mas {
-		cursor:pointer;
-		color:blue;
-		font-size:12px;
-	}
+.texto .mas {
+	cursor:pointer;
+	color:blue;	
+
+}

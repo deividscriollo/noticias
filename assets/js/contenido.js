@@ -24,7 +24,7 @@
 				// viendo el contenido entero o cortado.
 				// Añadimos un id con el indice del array, para posteriormente
 				// poder mostrar el texto completo.
-				$(this).append("<span class='mas cortado' id='"+(arrayText.length-1)+"'>(más)</span>");
+				$(this).append("<span class='mas cortado' id='"+(arrayText.length-1)+"'>"+'<a class="btn btn-success"> <span class="m-icon-big-swapright m-icon-white"></span></a>'+"</span>");
 			}
 			
 			// mostramos el contenido de la clase texto (por defecto esta con
@@ -45,7 +45,7 @@
 				$(this).prev("span").html(arrayText[$(this).attr("id")]);
 				
 				// modificamos el texto a "(menos)" y eliminamos la clase "cortado"
-				$(this).html("(menos)").removeClass("cortado");
+				$(this).html('<a class="btn btn-success"> <span class="m-icon-big-swapleft m-icon-white"></span></a>').removeClass("cortado");
 			}else{
 				// añadimos al <span> anterior al pulsado el contenido cortado
 				// del array de valores. Para saber el indice del array 
@@ -53,7 +53,7 @@
 				$(this).prev("span").html(arrayText[$(this).attr("id")].substr(0,100)+"...");
 				
 				// modificamos el texto a "(mas)" y añadimos la clase "cortado"
-				$(this).html("(más)").addClass("cortado");
+				$(this).html('<a class="btn btn-success"> <span class="m-icon-big-swapright m-icon-white"></span></a>').addClass("cortado");
 			}
 		});
 	});
