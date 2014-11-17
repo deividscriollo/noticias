@@ -29,6 +29,7 @@
 	<script src="assets/js/jquery.tweet.js"></script>
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
 	<script src="assets/js/application.js"></script>
+	<script src="js/audios.js"></script>
 	<!--[if (gte IE 6)&(lte IE 8)]>
 	<script src="selectivizr.js"></script>
 	<![endif]-->
@@ -45,6 +46,16 @@
 <header>
 <!-- Navbar
 ================================================== -->
+<audio src="audios/inicio.mp3" type="audio/mpeg" id="audioInicio"></audio>
+<audio src="audios/tecnologia.mp3" type="audio/mpeg" id="audioTecnologia"></audio>
+<audio src="audios/ciencia.mp3" type="audio/mpeg" id="audioCiencia"></audio>
+<audio src="audios/variedades.mp3" type="audio/mpeg" id="audioVariedades"></audio>
+<audio src="audios/inodoro.mp3" type="audio/mpeg" id="audioInodoro"></audio>
+<audio src="audios/inodoro_inteligente.mp3" type="audio/mpeg" id="audioInodoro_inteligente"></audio>
+<audio src="audios/celulas.mp3" type="audio/mpeg" id="audioCelulas"></audio>
+<audio src="audios/celulas_inteligentes.mp3" type="audio/mpeg" id="audioCelulas_inteligentes"></audio>
+<audio src="audios/cafe.mp3" type="audio/mpeg" id="audioCafe"></audio>
+<audio src="audios/cafe_ca.mp3" type="audio/mpeg" id="audioCafe_ca"></audio>
 <div class="navbar navbar-fixed-top" style="background: red!important;">
 	<div class="navbar-inner">
 		<div class="container">
@@ -57,13 +68,13 @@
 			<div>
 				<nav>
 				<ul class="nav topnav">
-					<li class="dropdown success ">
+					<li class="dropdown success " id="inicio" data-audio="audioInicio">
 					<a href="index.html"><i class="icon-home icon-white"></i> INICIO</a></li>
-					<li class="dropdown primary ">
+					<li class="dropdown primary" id="tecnologia" data-audio="audioTecnologia">
 					<a href="tecnologia.html"><i class="icon-star icon-white"></i> TECNOLOGÍA</a></li>
-					<li class="dropdown danger active">
+					<li class="dropdown danger active" id="ciencia" data-audio="audioCiencia">
 					<a href="ciencia.html"><i class="icon-leaf icon-white"></i> CIENCIA</a></li>
-					<li class="dropdown inverse">
+					<li class="dropdown inverse" id="variedades" data-audio="audioVariedades">
 					<a href="variedad.html"><i class="icon-camera icon-white"></i> VARIEDADES</a></li>
 				</ul>
 				</nav>
@@ -132,8 +143,8 @@
 			 <ul class="thumbnails">
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/4.fw.png" alt="" />
-							<div class="caption">
+							<img src="assets/img/tecnologia/4.fw.png" alt="" id="inodoro" data-audio="audioInodoro" />
+							<div class="caption" id="inodoro_inteligente" data-audio="audioInodoro_inteligente">
 								<h3 class="heading-success" >Inodoro Inteligente</h3>
 								<p>
 									Pocas partes de la casa tienen tantos sinónimos como el inodoro (que dependerán según el país): desde "trono" a retrete, sanitario, etc...
@@ -146,8 +157,8 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/5.fw.png" alt="" />
-							<div class="caption">
+							<img src="assets/img/tecnologia/5.fw.png" alt="" id="celulas" data-audio="audioCelulas"/>
+							<div class="caption" id="celulas_inteligentes" data-audio="audioCelulas_inteligentes">
 								<h3 class="heading-success" >Celulas Inteligentes</h3>
 								<p>
 									Un grupo de ingenieros químicos de la Universidad Estatal de Pennsylvania ha logrado crear los primeros motores sintéticos...
@@ -160,8 +171,8 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/6.fw.png" alt="" />
-							<div class="caption">
+							<img src="assets/img/tecnologia/6.fw.png" alt="" id="cafe" data-audio="audioCafe" />
+							<div class="caption" id="cafe_ca" data-audio="audioCafe_ca">
 								<h3 class="heading-success" >Cafe - Cafeina</h3>
 								<p>
 									Dos cafés expreso al día. Es aproximadamente la cantidad de cafeína que, según un nuevo experimento científico, ayuda a potenciar nuestra memoria a largo plazo....
