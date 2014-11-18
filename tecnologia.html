@@ -51,6 +51,16 @@
 <audio src="audios/tecnologia.mp3" type="audio/mpeg" id="audioTecnologia"></audio>
 <audio src="audios/ciencia.mp3" type="audio/mpeg" id="audioCiencia"></audio>
 <audio src="audios/variedades.mp3" type="audio/mpeg" id="audioVariedades"></audio>
+<audio src="audios/ropa_inteligente.mp3" type="audio/mpeg" id="audioRopa_inteligente"></audio>
+<audio src="audios/en_el_catalogo.mp3" type="audio/mpeg" id="audioEn_el_catalogo"></audio>
+<audio src="audios/descubrimientos.mp3" type="audio/mpeg" id="audioDescubrimientos"></audio>
+<audio src="audios/cientificos.mp3" type="audio/mpeg" id="audioCientificos"></audio>
+<audio src="audios/parque_yasuni.mp3" type="audio/mpeg" id="audioParque_yasuni"></audio>
+<audio src="audios/yasuni.mp3" type="audio/mpeg" id="audioYasuni"></audio>
+<audio src="audios/este_sitio.mp3" type="audio/mpeg" id="audioEste_sitio"></audio>
+<audio src="audios/galeria.mp3" type="audio/mpeg" id="audioGaleria"></audio>
+<audio src="audios/buena_a.mp3" type="audio/mpeg" id="audioBuena_a"></audio>
+<audio src="audios/records.mp3" type="audio/mpeg" id="audioRecords"></audio>
 <!-- Navbar
 ================================================== -->
 <div class="navbar navbar-fixed-top" style="background: red!important;">
@@ -65,13 +75,15 @@
 			<div>
 				<nav>
 				<ul class="nav topnav">
-					<li class="dropdown success ">
+					<li class="dropdown success " id="inicio" data-audio="audioInicio">
 					<a href="index.html"><i class="icon-home icon-white"></i> INICIO</a></li>
-					<li class="dropdown primary active">
+					
+					<li class="dropdown primary active" id="tecnologia" data-audio="audioTecnologia">
 					<a href="tecnologia.html"><i class="icon-star icon-white"></i> TECNOLOGÍA</a></li>
-					<li class="dropdown danger">
+					<li class="dropdown danger" id="ciencia" data-audio="audioCiencia">
 					<a href="ciencia.html"><i class="icon-leaf icon-white"></i> CIENCIA</a></li>
-					<li class="dropdown inverse">
+					
+					<li class="dropdown inverse" id="variedades" data-audio="audioVariedades">
 					<a href="variedad.html"><i class="icon-camera icon-white"></i> VARIEDADES</a></li>
 				</ul>
 				</nav>
@@ -98,14 +110,14 @@
 	<div class="row">
 		<div class="span4">
 			
-			<div class="row">
+			<div class="row" id="este_sitio" data-audio="audioEste_sitio">
 				<h3 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Este Sitio</h3>				
 			</div>
 			<div class="row">
-				<h3 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Galería</h3>
+				<h3 class="heading-success" id="galeria" data-audio="audioGaleria"><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Galería</h3>
 				<div id="myCarousel" class="carousel slide testimonials">
 					<div class="carousel-inner">
-						<div class="item active">
+						<div class="item active" id="buena_a" data-audio="audioBuena_a">
 							<div class="testimonial">
 								<img src="assets/img/gal1.fw.png" alt="" />
 								<blockquote>
@@ -117,7 +129,7 @@
 							</div>
 						</div>
 						<div class="item">
-							<div class="testimonial">
+							<div class="testimonial" id="records" data-audio="audioRecords">
 								<img src="assets/img/gal2.fw.png" alt="" />
 								<blockquote>
 									<p>
@@ -138,10 +150,10 @@
 			 <ul class="thumbnails">
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/1.fw.png" alt="" />
-							<div class="caption">
-								<h3 class="heading-success" >Crean Ropa Inteligente</h3>	
-								<div class="texto">
+							<img src="assets/img/tecnologia/1.fw.png" alt="" id="ropa_inteligente" data-audio="audioRopa_inteligente"/>
+							<div class="caption" id="en_el_catalogo" data-audio="audioEn_el_catalogo">
+								<h3 class="heading-success">Crean Ropa Inteligente</h3>	
+								<div class="texto" >
 									<span>En el catálogo de un operador de telefonía podemos esperar encontrar exclusivamente a teléfonos inteligentes y dispositivos similares, pero como pensaron que no era suficiente, por lo que se lanzaron a colaborar con Toray, una empresa centrada en el desarrollo de equipos basados en textiles, y hoy anuncian los primeros productos de esta colaboración entre las dos empresas.</span>
 								</div>
 								
@@ -150,10 +162,10 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/3.fw.png" alt="" />
-							<div class="caption">
+							<img src="assets/img/tecnologia/3.fw.png" alt="" id="descubrimientos" data-audio="audioDescubrimientos"/>
+							<div class="caption" id="cientificos" data-audio="audioCientificos">
 								<h3 class="heading-success" >Descubrimiento</h3>
-								<div class="texto">
+								<div class="texto" >
 									<span>Científicos de la Universidad de Columbia han dado un paso importante en la lucha contra un problema estético muy común: la calvicie. La técnica consiste en un trasplante celular que, por primera vez es capaz de generar nuevos cabellos.</span>
 								</div>
 							</div>
@@ -161,8 +173,8 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/2.fw.png" alt="" />
-							<div class="caption">
+							<img src="assets/img/tecnologia/2.fw.png" alt="" id="parque_yasuni" data-audio="audioParque_yasuni"/>
+							<div class="caption" id="yasuni" data-audio="audioYasuni">
 								<h3 class="heading-success" >Parque Nacional Yasuni ITT</h3>
 								<div class="texto">
 									<span>De acuerdo a estudios científicos, el Parque Yasuní ubicado en la Región amazónica ecuatoriana, en las provincias de Orellana y Pastaza, es la región de mayor diversidad biológica del mundo. El 20 de noviembre 1979 se declaró al Yasuní como Parque Nacional. Esta declaración se la hace por existir en su interior una riqueza natural que debe ser preservada.</span>

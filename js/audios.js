@@ -40,6 +40,12 @@ function inicio (){
 	$("#vuelo").on("mouseenter",mouseEnter);
 	$("#vuelo_aves").on("mouseenter",mouseEnter);
 	$("#vuelo_aves").on("mouseleave",mouseLeave);
+	$("#este_sitio").on("mouseenter",mouseEnter);
+	$("#galeria").on("mouseenter",mouseEnter);
+	$("#buena_a").on("mouseenter",mouseEnter);
+	$("#buena_a").on("mouseleave",mouseLeave);
+	$("#records").on("mouseenter",mouseEnter);
+	$("#records").on("mouseleave",mouseLeave);
 }
 function mouseEnter(e){
 	var audio = $(this).context.dataset.audio;
