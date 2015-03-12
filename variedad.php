@@ -47,27 +47,27 @@
 </head>
 <body>
 <header>
+<!-- Navbar
+================================================== -->
 <audio src="audios/inicio.mp3" type="audio/mpeg" id="audioInicio"></audio>
 <audio src="audios/tecnologia.mp3" type="audio/mpeg" id="audioTecnologia"></audio>
 <audio src="audios/ciencia.mp3" type="audio/mpeg" id="audioCiencia"></audio>
 <audio src="audios/variedades.mp3" type="audio/mpeg" id="audioVariedades"></audio>
-<audio src="audios/ropa_inteligente.mp3" type="audio/mpeg" id="audioRopa_inteligente"></audio>
-<audio src="audios/en_el_catalogo.mp3" type="audio/mpeg" id="audioEn_el_catalogo"></audio>
-<audio src="audios/descubrimientos.mp3" type="audio/mpeg" id="audioDescubrimientos"></audio>
-<audio src="audios/cientificos.mp3" type="audio/mpeg" id="audioCientificos"></audio>
-<audio src="audios/parque_yasuni.mp3" type="audio/mpeg" id="audioParque_yasuni"></audio>
-<audio src="audios/yasuni.mp3" type="audio/mpeg" id="audioYasuni"></audio>
+<audio src="audios/polo.mp3" type="audio/mpeg" id="audioPolo"></audio>
+<audio src="audios/polo_pro.mp3" type="audio/mpeg" id="audioPolo_pro"></audio>
+<audio src="audios/tecnologiaPotable.mp3" type="audio/mpeg" id="audioTecnologiaPotable"></audio>
+<audio src="audios/tecnologia_potable.mp3" type="audio/mpeg" id="audioTecnologia_potable"></audio>
+<audio src="audios/vuelo.mp3" type="audio/mpeg" id="audioVuelo"></audio>
+<audio src="audios/vuelo_aves.mp3" type="audio/mpeg" id="audioVuelo_aves"></audio>
 <audio src="audios/este_sitio.mp3" type="audio/mpeg" id="audioEste_sitio"></audio>
 <audio src="audios/galeria.mp3" type="audio/mpeg" id="audioGaleria"></audio>
 <audio src="audios/buena_a.mp3" type="audio/mpeg" id="audioBuena_a"></audio>
 <audio src="audios/records.mp3" type="audio/mpeg" id="audioRecords"></audio>
-<!-- Navbar
-================================================== -->
 <div class="navbar navbar-fixed-top" style="background: red!important;">
 	<div class="navbar-inner">
 		<div class="container">
 			<!-- logo -->
-			<a class="brand logo" href="index.html">
+			<a class="brand logo" href="index.php">
 			<img src="assets/img/logo.png" alt="" />
 			</a>
 			<!-- end logo -->
@@ -75,16 +75,16 @@
 			<div>
 				<nav>
 				<ul class="nav topnav">
+					<li class="dropdown inverse" id="login" data-audio="">
+					<a href="#"><i class="icon-user icon-white"></i> LOGIN</a></li>
 					<li class="dropdown success " id="inicio" data-audio="audioInicio">
-					<a href="index.html"><i class="icon-home icon-white"></i> INICIO</a></li>
-					
-					<li class="dropdown primary active" id="tecnologia" data-audio="audioTecnologia">
-					<a href="tecnologia.html"><i class="icon-star icon-white"></i> TECNOLOGÍA</a></li>
-					<li class="dropdown danger" id="ciencia" data-audio="audioCiencia">
-					<a href="ciencia.html"><i class="icon-leaf icon-white"></i> CIENCIA</a></li>
-					
-					<li class="dropdown inverse" id="variedades" data-audio="audioVariedades">
-					<a href="variedad.html"><i class="icon-camera icon-white"></i> VARIEDADES</a></li>
+					<a href="index.php"><i class="icon-home icon-white"></i> INICIO</a></li>
+					<li class="dropdown primary" id="tecnologia" data-audio="audioTecnologia">
+					<a href="tecnologia.php"><i class="icon-star icon-white"></i> TECNOLOGÍA</a></li>
+					<li class="dropdown danger " id="ciencia" data-audio="audioCiencia">
+					<a href="ciencia.php"><i class="icon-leaf icon-white"></i> CIENCIA</a></li>
+					<li class="dropdown inverse active" id="variedades" data-audio="audioVariedades">
+					<a href="variedad.php"><i class="icon-camera icon-white"></i> VARIEDADES</a></li>
 				</ul>
 				</nav>
 			</div>
@@ -95,11 +95,11 @@
 </header>
 
 <section id="subintro">
-<div class="jumbotron subhead dct" id="overview">
+<div class="jumbotron subhead dcv" id="overview">
 	<div class="container">
 		<div class="row">
 			<div class="span12">
-				<h3><i class="m-icon-big-swapright m-icon-white"></i> TECNOLOGÍA</h3>				
+				<h3><i class="m-icon-big-swapright m-icon-white"></i> VARIEDADES</h3>				
 			</div>			
 		</div>
 	</div>
@@ -111,7 +111,7 @@
 		<div class="span4">
 			
 			<div class="row" id="este_sitio" data-audio="audioEste_sitio">
-				<h3 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Este Sitio</h3>				
+				<h3 class="heading-success" ><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Este Sitio</h3>				
 			</div>
 			<div class="row">
 				<h3 class="heading-success" id="galeria" data-audio="audioGaleria"><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Galería</h3>
@@ -128,8 +128,8 @@
 								
 							</div>
 						</div>
-						<div class="item">
-							<div class="testimonial" id="records" data-audio="audioRecords">
+						<div class="item" id="records" data-audio="audioRecords">
+							<div class="testimonial">
 								<img src="assets/img/gal2.fw.png" alt="" />
 								<blockquote>
 									<p>
@@ -150,34 +150,33 @@
 			 <ul class="thumbnails">
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/1.fw.png" alt="" id="ropa_inteligente" data-audio="audioRopa_inteligente"/>
-							<div class="caption" id="en_el_catalogo" data-audio="audioEn_el_catalogo">
-								<h3 class="heading-success">Crean Ropa Inteligente</h3>	
-								<div class="texto" >
-									<span>En el catálogo de un operador de telefonía podemos esperar encontrar exclusivamente a teléfonos inteligentes y dispositivos similares, pero como pensaron que no era suficiente, por lo que se lanzaron a colaborar con Toray, una empresa centrada en el desarrollo de equipos basados en textiles, y hoy anuncian los primeros productos de esta colaboración entre las dos empresas.</span>
-								</div>
-								
-							</div>
-						</div>
-					</li>
-					<li class="span4">
-						<div class="thumbnail">
-							<img src="assets/img/tecnologia/3.fw.png" alt="" id="descubrimientos" data-audio="audioDescubrimientos"/>
-							<div class="caption" id="cientificos" data-audio="audioCientificos">
-								<h3 class="heading-success" >Descubrimiento</h3>
-								<div class="texto" >
-									<span>Científicos de la Universidad de Columbia han dado un paso importante en la lucha contra un problema estético muy común: la calvicie. La técnica consiste en un trasplante celular que, por primera vez es capaz de generar nuevos cabellos.</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="span4">
-						<div class="thumbnail">
-							<img src="assets/img/tecnologia/2.fw.png" alt="" id="parque_yasuni" data-audio="audioParque_yasuni"/>
-							<div class="caption" id="yasuni" data-audio="audioYasuni">
-								<h3 class="heading-success" >Parque Nacional Yasuni ITT</h3>
+							<img src="assets/img/tecnologia/7.fw.png" alt="" id="polo" data-audio="audioPolo"/>
+							<div class="caption" id="polo_pro" data-audio="audioPolo_pro">
+								<h3 class="heading-success" >Problemas en el Polo</h3>
 								<div class="texto">
-									<span>De acuerdo a estudios científicos, el Parque Yasuní ubicado en la Región amazónica ecuatoriana, en las provincias de Orellana y Pastaza, es la región de mayor diversidad biológica del mundo. El 20 de noviembre 1979 se declaró al Yasuní como Parque Nacional. Esta declaración se la hace por existir en su interior una riqueza natural que debe ser preservada.</span>
+									<span>Si piensas en el Polo Norte como una superficie sólida de hielo vas a llevarte una sorpresa. Este mes se ha derretido y es ahora un enorme lago de agua muy, muy fría. Suena terrible, pero en realidad no es tan serio como en principio parece.</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="span4">
+						<div class="thumbnail">
+							<img src="assets/img/tecnologia/8.fw.png" alt="" id="tecnologiaPotable" data-audio="audioTecnologiaPotable" />
+							<div class="caption" id="tecnologia_potable" data-audio="audioTecnologia_potable">
+								<h3 class="heading-success" >Descubrimiento</h3>
+								<div class="texto">
+									<span>Uno de los campos de la nanotecnología donde más se ha investigado es en el de usar micropárticulas de sustancias como el dióxido de titanio como agentes limpiadores del agua. Los nano-carroñeros (nano-scavengers), que es como se denomina a estos agentes químicos, son capaces de destruir bacterias o de adherirse a contaminantes para hacerlos desaparecer del agua. El problema viene cuando hay que deshacerse de los nano-carroñeros.</span>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="span4">
+						<div class="thumbnail">
+							<img src="assets/img/tecnologia/9.fw.png" alt="" id="vuelo" data-audio="audioVuelo" />
+							<div class="caption" id="vuelo_aves" data-audio="audioVuelo_aves">
+								<h3 class="heading-success" >Vuelo de Aves</h3>
+								<div class="texto">
+									<span>Un grupo de investigadores británicos ha dado con la respuesta científica a uno de los fenómenos más curiosos que a veces vemos surcar el cielo: bandadas de pájaros en formación en V. ¿Por qué en esa forma en concreto y no otra? La conclusión a la que han llegado se resume en dos palabras: aerodinámica y eficiencia. Se sabía que era así, pero ahora lo han probado científicamente. Un hallazgo que se podría aplicar al diseño de la Robótica.</span>
 								</div>
 							</div>
 						</div>

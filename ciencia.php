@@ -37,6 +37,9 @@
 	<script src="assets/js/hover/jquery-hover-effect.js"></script>
 	<script src="assets/js/hover/setting.js"></script>
 	<script src="assets/js/custom.js"></script>
+
+	<!-- Efecto renderizado -->
+	<script src="assets/js/contenido.js"></script>
 	<!-- fav and touch icons -->
 	<link rel="shortcut icon" href="assets/ico/icon.fw.png" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -50,12 +53,12 @@
 <audio src="audios/tecnologia.mp3" type="audio/mpeg" id="audioTecnologia"></audio>
 <audio src="audios/ciencia.mp3" type="audio/mpeg" id="audioCiencia"></audio>
 <audio src="audios/variedades.mp3" type="audio/mpeg" id="audioVariedades"></audio>
-<audio src="audios/viber.mp3" type="audio/mpeg" id="audioViber"></audio>
-<audio src="audios/rakuten.mp3" type="audio/mpeg" id="audioRakuten"></audio>
-<audio src="audios/red_5g.mp3" type="audio/mpeg" id="audioRed_5g"></audio>
-<audio src="audios/mudarse_correa.mp3" type="audio/mpeg" id="audioMudarse_correa"></audio>
-<audio src="audios/windows_xp.mp3" type="audio/mpeg" id="audioWindows_xp"></audio>
-<audio src="audios/microsoft.mp3" type="audio/mpeg" id="audioMicrosoft"></audio>
+<audio src="audios/inodoro.mp3" type="audio/mpeg" id="audioInodoro"></audio>
+<audio src="audios/inodoro_inteligente.mp3" type="audio/mpeg" id="audioInodoro_inteligente"></audio>
+<audio src="audios/celulas.mp3" type="audio/mpeg" id="audioCelulas"></audio>
+<audio src="audios/celulas_inteligentes.mp3" type="audio/mpeg" id="audioCelulas_inteligentes"></audio>
+<audio src="audios/cafe.mp3" type="audio/mpeg" id="audioCafe"></audio>
+<audio src="audios/cafe_ca.mp3" type="audio/mpeg" id="audioCafe_ca"></audio>
 <audio src="audios/este_sitio.mp3" type="audio/mpeg" id="audioEste_sitio"></audio>
 <audio src="audios/galeria.mp3" type="audio/mpeg" id="audioGaleria"></audio>
 <audio src="audios/buena_a.mp3" type="audio/mpeg" id="audioBuena_a"></audio>
@@ -64,7 +67,7 @@
 	<div class="navbar-inner">
 		<div class="container">
 			<!-- logo -->
-			<a class="brand logo" href="index.html">
+			<a class="brand logo" href="index.php">
 			<img src="assets/img/logo.png" alt="" />
 			</a>
 			<!-- end logo -->
@@ -72,16 +75,16 @@
 			<div>
 				<nav>
 				<ul class="nav topnav">
-					<li class="dropdown success active" id="inicio" data-audio="audioInicio">
-					<a href="index.html"><i class="icon-home icon-white"></i> INICIO</a></li>
-					
+					<li class="dropdown inverse" id="login" data-audio="">
+					<a href="#"><i class="icon-user icon-white"></i> LOGIN</a></li>
+					<li class="dropdown success " id="inicio" data-audio="audioInicio">
+					<a href="index.php"><i class="icon-home icon-white"></i> INICIO</a></li>
 					<li class="dropdown primary" id="tecnologia" data-audio="audioTecnologia">
-					<a href="tecnologia.html"><i class="icon-star icon-white"></i> TECNOLOGÍA</a></li>
-					<li class="dropdown danger" id="ciencia" data-audio="audioCiencia">
-					<a href="ciencia.html"><i class="icon-leaf icon-white"></i> CIENCIA</a></li>
-					
+					<a href="tecnologia.php"><i class="icon-star icon-white"></i> TECNOLOGÍA</a></li>
+					<li class="dropdown danger active" id="ciencia" data-audio="audioCiencia">
+					<a href="ciencia.php"><i class="icon-leaf icon-white"></i> CIENCIA</a></li>
 					<li class="dropdown inverse" id="variedades" data-audio="audioVariedades">
-					<a href="variedad.html"><i class="icon-camera icon-white"></i> VARIEDADES</a></li>
+					<a href="variedad.php"><i class="icon-camera icon-white"></i> VARIEDADES</a></li>
 				</ul>
 				</nav>
 			</div>
@@ -90,62 +93,27 @@
 	</div>
 </div>
 </header>
-<section id="intro">
-<div class="jumbotron masthead">
+
+<section id="subintro">
+<div class="jumbotron subhead dcc" id="overview">
 	<div class="container">
 		<div class="row">
 			<div class="span12">
-				<!-- Place somewhere in the <body> of your page -->
-				<div id="mainslider" class="flexslider">
-					<ul class="slides">
-						<li data-thumb="assets/img/slides/flexslider/img1.jpg">
-						<img src="assets/img/slides/flexslider/img1.jpg" alt="" />
-						<div class="flex-caption primary">
-							<h3>Noticias</h3>
-						</div>
-						</li>
-						<li data-thumb="assets/img/slides/flexslider/img2.jpg">
-						<img src="assets/img/slides/flexslider/img2.jpg" alt="" />
-						<div class="flex-caption warning">
-							<h2>Tecnología</h2>
-							
-						</div>
-						</li>
-						<li data-thumb="assets/img/slides/flexslider/img3.jpg">
-						<img src="assets/img/slides/flexslider/img3.jpg" alt="" />
-						<div class="flex-caption success">
-							<h2>Ciencia</h2>
-							
-						</div>
-						</li>
-						<li data-thumb="assets/img/slides/flexslider/img4.jpg">
-						<img src="assets/img/slides/flexslider/img4.jpg" alt="" />
-						<div class="flex-caption danger">
-							<h2>Variedad</h2>
-							
-						</div>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="span4">
-				
-			</div>
+				<h3><i class="m-icon-big-swapright m-icon-white"></i> VARIEDADES</h3>				
+			</div>			
 		</div>
 	</div>
 </div>
 </section>
-
-<section id="bottom">
+<section id="maincontent">
 <div class="container">
 	<div class="row">
-		<div class="span3">
-			
-			<div class="row" id="este_sitio" data-audio="audioEste_sitio">
-				<h3 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Este Sitio</h3>				
+		<div class="span4">			
+			<div class="row">
+				<h3 class="heading-success" id="este_sitio" data-audio="audioEste_sitio"><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Este Sitio</h3>				
 			</div>
 			<div class="row">
-				<h3 class="heading-success" id="galeria" data-audio="audioGaleria"><span class="btn btn-large btn-success" ><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Galería</h3>
+				<h3 class="heading-success" id="galeria" data-audio="audioGaleria"><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Galería</h3>
 				<div id="myCarousel" class="carousel slide testimonials">
 					<div class="carousel-inner">
 						<div class="item active" id="buena_a" data-audio="audioBuena_a">
@@ -177,47 +145,44 @@
 				</div>
 			</div>
 		</div>
-		<div class="span9">
-			<div class="container">	
-				<div class="row">				
-					<div class="span3">
-						<div class="well well-primary box">
-							<img src="assets/img/icons/box-1-white.png" alt="" id="viber" data-audio="audioViber" />
-							<h3>COMPRA VIBER</h3>
-							<p id="rakuten" data-audio="audioRakuten">
-								 Rakuten, el gigante japonés de comercio electrónico
-
-								(  una especie de Amazon local) ha comprado Viber
-
-								por 900 millones de dólares.
-							</p>							
+		<div class="span8">			
+			 <ul class="thumbnails">
+					<li class="span4">
+						<div class="thumbnail">
+							<img src="assets/img/tecnologia/4.fw.png" alt="" id="inodoro" data-audio="audioInodoro" />
+							<div class="caption" id="inodoro_inteligente" data-audio="audioInodoro_inteligente">
+								<h3 class="heading-success" >Inodoro Inteligente</h3>
+								<div class="texto">
+									<span>Pocas partes de la casa tienen tantos sinónimos como el inodoro (que dependerán según el país): desde "trono" a retrete, sanitario, etc. Ahora, llega el momento de que este producto se adapte al momento actual, volviéndose "inteligente" y capaz de proporcionarnos información útil sobre nuestra salud.</span>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="span3">
-						<div class="well well-success box">
-							<img src="assets/img/icons/box-2-white.png" alt="" id="red_5g" data-audio="audioRed_5g" />
-							<h3>RED 5G</h3>
-							<p id="mudarse_correa" data-audio="audioMudarse_correa">
-								 Mudarse a Corea del Sur en el año 2020 será una muy buena idea. El Ministerio de Educación, Ciencia y Tecnología del país ha anunciado que se invertirán $1500 millones de dólares para desarrollar una nueva tecnología 5G
-
-							</p>
-							
+					</li>
+					<li class="span4">
+						<div class="thumbnail">
+							<img src="assets/img/tecnologia/5.fw.png" alt="" id="celulas" data-audio="audioCelulas"/>
+							<div class="caption" id="celulas_inteligentes" data-audio="audioCelulas_inteligentes">
+								<h3 class="heading-success" >Celulas Inteligentes</h3>
+								<div class="texto">
+									<span>Un grupo de ingenieros químicos de la Universidad Estatal de Pennsylvania ha logrado crear los primeros motores sintéticos capaces de operar en una célula viva sin dañarla. Los dispositivos abren la puerta a todo tipo de tratamientos de enfermedades como el cáncer a nivel intracelular.</span>
+								</div>
+							</div>
 						</div>
-					</div>
-					<div class="span3">
-						<div class="well well-warning box">
-							<img src="assets/img/icons/box-3-white.png" alt="" id="windows_xp" data-audio="audioWindows_xp" />
-							<h3>WINDOWS XP</h3>
-							<p id="microsoft" data-audio="audioMicrosoft">
-								 Microsoft hace tiempo que nos viene avisando que en este año 2014 cerrará por completo la puerta a Windows XP tras más de 12 años de servicio.
-							</p>
-							
+					</li>
+					<li class="span4">
+						<div class="thumbnail">
+							<img src="assets/img/tecnologia/6.fw.png" alt="" id="cafe" data-audio="audioCafe" />
+							<div class="caption" id="cafe_ca" data-audio="audioCafe_ca">
+								<h3 class="heading-success" >Cafe - Cafeina</h3>
+								<div class="texto">
+									<span>Dos cafés expreso al día. Es aproximadamente la cantidad de cafeína que, según un nuevo experimento científico, ayuda a potenciar nuestra memoria a largo plazo. El estudio, liderado por el investigador Michael Yassa de la Universidad de California (Irvine), ha demostrado que tomar 200 miligramos de cafeína puede mejorar nuestra capacidad de recordar algo más de 24 horas de haberlo visto.</span>
+								</div>
+							</div>
 						</div>
-					</div>
-				</div>					
-			</div>
+					</li>
+				</ul>
 		</div>
-	</div>	
+	</div>
 </div>
 </section>
 <!-- Footer

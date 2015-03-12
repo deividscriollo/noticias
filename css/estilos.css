@@ -1,0 +1,50 @@
+h3{
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+	font-size: 14px;
+}
+h4{
+	padding: 0px;
+	margin: 0px;
+	font-weight: bold;
+	font-size: 13px;
+}
+#nivel_1{
+	width: 40%;
+	border: solid 0px;
+	display: inline-block;
+}
+#nivel_2{
+	display: inline-block;
+	width: 58%;
+	border: solid 0px;	
+}
+#nivel_2 div{	
+	padding: 1px;
+	width: 100%;		
+}
+#nuevo {
+	display: inline-block;
+}
+#nuevo{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+#nuevo div h4{	
+	display: inline-block;
+	width: 40%;
+}
+#nuevo div input{
+	display: inline-block;
+	width: 56%;
+
+}
+#nuevo div textarea{
+	display: inline-block;
+	width: 56%;
+}
+.ui-dialog {
+	z-index: 1000000;
+}

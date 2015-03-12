@@ -46,6 +46,45 @@ function inicio (){
 	$("#buena_a").on("mouseleave",mouseLeave);
 	$("#records").on("mouseenter",mouseEnter);
 	$("#records").on("mouseleave",mouseLeave);
+	///////////////////////////////////////	
+	$("#login").click(function(){
+		$( "#frm_login" ).dialog('open');
+	});	
+	dialog = $( "#frm_cambios" ).dialog({
+		autoOpen: true,
+	    height: 550,
+	    width: 600,
+	    modal: true,              
+    });
+	dialog = $( "#frm_login" ).dialog({
+      autoOpen: false,
+      height: 180,
+      width: 330,
+      modal: true,              
+    });
+    //////////////////
+    $("#btn_loginLimpiar").click(function(){
+    	$("#txt_loginUsuario").val("");
+    	$("#txt_loginPass").val("");
+    	$("#txt_loginUsuario").focus();
+    });
+    $("#btn_loginIngreso").click(function (){
+    	if($("#txt_loginUsuario").val() != "" && $("#txt_loginPass").val() != ""){
+    		if($("#txt_loginUsuario").val() == "Admin" && $("#txt_loginPass").val() == "admin"){
+
+    		}else{
+    			alert("Datos incorrectos");
+    			$( "#frm_login" ).effect("shake");
+    			$("#txt_loginUsuario").val("");
+		    	$("#txt_loginPass").val("");
+		    	$("#txt_loginUsuario").focus();
+    		}
+    	}else{
+    		alert("Indique un usuario u contraseña");
+    	}
+    });
+
+ 
 }
 function mouseEnter(e){
 	var audio = $(this).context.dataset.audio;

@@ -30,6 +30,9 @@
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
 	<script src="assets/js/application.js"></script>
 	<script src="js/audios.js"></script>
+
+	<!-- Efecto renderizado -->
+	<script src="assets/js/contenido.js"></script>
 	<!--[if (gte IE 6)&(lte IE 8)]>
 	<script src="selectivizr.js"></script>
 	<![endif]-->
@@ -37,9 +40,6 @@
 	<script src="assets/js/hover/jquery-hover-effect.js"></script>
 	<script src="assets/js/hover/setting.js"></script>
 	<script src="assets/js/custom.js"></script>
-
-	<!-- Efecto renderizado -->
-	<script src="assets/js/contenido.js"></script>
 	<!-- fav and touch icons -->
 	<link rel="shortcut icon" href="assets/ico/icon.fw.png" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -47,27 +47,27 @@
 </head>
 <body>
 <header>
-<!-- Navbar
-================================================== -->
 <audio src="audios/inicio.mp3" type="audio/mpeg" id="audioInicio"></audio>
 <audio src="audios/tecnologia.mp3" type="audio/mpeg" id="audioTecnologia"></audio>
 <audio src="audios/ciencia.mp3" type="audio/mpeg" id="audioCiencia"></audio>
 <audio src="audios/variedades.mp3" type="audio/mpeg" id="audioVariedades"></audio>
-<audio src="audios/inodoro.mp3" type="audio/mpeg" id="audioInodoro"></audio>
-<audio src="audios/inodoro_inteligente.mp3" type="audio/mpeg" id="audioInodoro_inteligente"></audio>
-<audio src="audios/celulas.mp3" type="audio/mpeg" id="audioCelulas"></audio>
-<audio src="audios/celulas_inteligentes.mp3" type="audio/mpeg" id="audioCelulas_inteligentes"></audio>
-<audio src="audios/cafe.mp3" type="audio/mpeg" id="audioCafe"></audio>
-<audio src="audios/cafe_ca.mp3" type="audio/mpeg" id="audioCafe_ca"></audio>
+<audio src="audios/ropa_inteligente.mp3" type="audio/mpeg" id="audioRopa_inteligente"></audio>
+<audio src="audios/en_el_catalogo.mp3" type="audio/mpeg" id="audioEn_el_catalogo"></audio>
+<audio src="audios/descubrimientos.mp3" type="audio/mpeg" id="audioDescubrimientos"></audio>
+<audio src="audios/cientificos.mp3" type="audio/mpeg" id="audioCientificos"></audio>
+<audio src="audios/parque_yasuni.mp3" type="audio/mpeg" id="audioParque_yasuni"></audio>
+<audio src="audios/yasuni.mp3" type="audio/mpeg" id="audioYasuni"></audio>
 <audio src="audios/este_sitio.mp3" type="audio/mpeg" id="audioEste_sitio"></audio>
 <audio src="audios/galeria.mp3" type="audio/mpeg" id="audioGaleria"></audio>
 <audio src="audios/buena_a.mp3" type="audio/mpeg" id="audioBuena_a"></audio>
 <audio src="audios/records.mp3" type="audio/mpeg" id="audioRecords"></audio>
+<!-- Navbar
+================================================== -->
 <div class="navbar navbar-fixed-top" style="background: red!important;">
 	<div class="navbar-inner">
 		<div class="container">
 			<!-- logo -->
-			<a class="brand logo" href="index.html">
+			<a class="brand logo" href="index.php">
 			<img src="assets/img/logo.png" alt="" />
 			</a>
 			<!-- end logo -->
@@ -75,14 +75,18 @@
 			<div>
 				<nav>
 				<ul class="nav topnav">
+					<li class="dropdown inverse" id="login" data-audio="">
+					<a href="#"><i class="icon-user icon-white"></i> LOGIN</a></li>
 					<li class="dropdown success " id="inicio" data-audio="audioInicio">
-					<a href="index.html"><i class="icon-home icon-white"></i> INICIO</a></li>
-					<li class="dropdown primary" id="tecnologia" data-audio="audioTecnologia">
-					<a href="tecnologia.html"><i class="icon-star icon-white"></i> TECNOLOGÍA</a></li>
-					<li class="dropdown danger active" id="ciencia" data-audio="audioCiencia">
-					<a href="ciencia.html"><i class="icon-leaf icon-white"></i> CIENCIA</a></li>
+					<a href="index.php"><i class="icon-home icon-white"></i> INICIO</a></li>
+					
+					<li class="dropdown primary active" id="tecnologia" data-audio="audioTecnologia">
+					<a href="tecnologia.php"><i class="icon-star icon-white"></i> TECNOLOGÍA</a></li>
+					<li class="dropdown danger" id="ciencia" data-audio="audioCiencia">
+					<a href="ciencia.php"><i class="icon-leaf icon-white"></i> CIENCIA</a></li>
+					
 					<li class="dropdown inverse" id="variedades" data-audio="audioVariedades">
-					<a href="variedad.html"><i class="icon-camera icon-white"></i> VARIEDADES</a></li>
+					<a href="variedad.php"><i class="icon-camera icon-white"></i> VARIEDADES</a></li>
 				</ul>
 				</nav>
 			</div>
@@ -93,11 +97,11 @@
 </header>
 
 <section id="subintro">
-<div class="jumbotron subhead dcc" id="overview">
+<div class="jumbotron subhead dct" id="overview">
 	<div class="container">
 		<div class="row">
 			<div class="span12">
-				<h3><i class="m-icon-big-swapright m-icon-white"></i> VARIEDADES</h3>				
+				<h3><i class="m-icon-big-swapright m-icon-white"></i> TECNOLOGÍA</h3>				
 			</div>			
 		</div>
 	</div>
@@ -106,9 +110,10 @@
 <section id="maincontent">
 <div class="container">
 	<div class="row">
-		<div class="span4">			
-			<div class="row">
-				<h3 class="heading-success" id="este_sitio" data-audio="audioEste_sitio"><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Este Sitio</h3>				
+		<div class="span4">
+			
+			<div class="row" id="este_sitio" data-audio="audioEste_sitio">
+				<h3 class="heading-success"><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Este Sitio</h3>				
 			</div>
 			<div class="row">
 				<h3 class="heading-success" id="galeria" data-audio="audioGaleria"><span class="btn btn-large btn-success"><i class="m-icon-big-swapright m-icon-white"></i></span>&nbsp;&nbsp;Galería</h3>
@@ -125,8 +130,8 @@
 								
 							</div>
 						</div>
-						<div class="item" id="records" data-audio="audioRecords">
-							<div class="testimonial">
+						<div class="item">
+							<div class="testimonial" id="records" data-audio="audioRecords">
 								<img src="assets/img/gal2.fw.png" alt="" />
 								<blockquote>
 									<p>
@@ -147,33 +152,34 @@
 			 <ul class="thumbnails">
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/4.fw.png" alt="" id="inodoro" data-audio="audioInodoro" />
-							<div class="caption" id="inodoro_inteligente" data-audio="audioInodoro_inteligente">
-								<h3 class="heading-success" >Inodoro Inteligente</h3>
-								<div class="texto">
-									<span>Pocas partes de la casa tienen tantos sinónimos como el inodoro (que dependerán según el país): desde "trono" a retrete, sanitario, etc. Ahora, llega el momento de que este producto se adapte al momento actual, volviéndose "inteligente" y capaz de proporcionarnos información útil sobre nuestra salud.</span>
+							<img src="assets/img/tecnologia/1.fw.png" alt="" id="ropa_inteligente" data-audio="audioRopa_inteligente"/>
+							<div class="caption" id="en_el_catalogo" data-audio="audioEn_el_catalogo">
+								<h3 class="heading-success">Crean Ropa Inteligente</h3>	
+								<div class="texto" >
+									<span>En el catálogo de un operador de telefonía podemos esperar encontrar exclusivamente a teléfonos inteligentes y dispositivos similares, pero como pensaron que no era suficiente, por lo que se lanzaron a colaborar con Toray, una empresa centrada en el desarrollo de equipos basados en textiles, y hoy anuncian los primeros productos de esta colaboración entre las dos empresas.</span>
+								</div>
+								
+							</div>
+						</div>
+					</li>
+					<li class="span4">
+						<div class="thumbnail">
+							<img src="assets/img/tecnologia/3.fw.png" alt="" id="descubrimientos" data-audio="audioDescubrimientos"/>
+							<div class="caption" id="cientificos" data-audio="audioCientificos">
+								<h3 class="heading-success" >Descubrimiento</h3>
+								<div class="texto" >
+									<span>Científicos de la Universidad de Columbia han dado un paso importante en la lucha contra un problema estético muy común: la calvicie. La técnica consiste en un trasplante celular que, por primera vez es capaz de generar nuevos cabellos.</span>
 								</div>
 							</div>
 						</div>
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/5.fw.png" alt="" id="celulas" data-audio="audioCelulas"/>
-							<div class="caption" id="celulas_inteligentes" data-audio="audioCelulas_inteligentes">
-								<h3 class="heading-success" >Celulas Inteligentes</h3>
+							<img src="assets/img/tecnologia/2.fw.png" alt="" id="parque_yasuni" data-audio="audioParque_yasuni"/>
+							<div class="caption" id="yasuni" data-audio="audioYasuni">
+								<h3 class="heading-success" >Parque Nacional Yasuni ITT</h3>
 								<div class="texto">
-									<span>Un grupo de ingenieros químicos de la Universidad Estatal de Pennsylvania ha logrado crear los primeros motores sintéticos capaces de operar en una célula viva sin dañarla. Los dispositivos abren la puerta a todo tipo de tratamientos de enfermedades como el cáncer a nivel intracelular.</span>
-								</div>
-							</div>
-						</div>
-					</li>
-					<li class="span4">
-						<div class="thumbnail">
-							<img src="assets/img/tecnologia/6.fw.png" alt="" id="cafe" data-audio="audioCafe" />
-							<div class="caption" id="cafe_ca" data-audio="audioCafe_ca">
-								<h3 class="heading-success" >Cafe - Cafeina</h3>
-								<div class="texto">
-									<span>Dos cafés expreso al día. Es aproximadamente la cantidad de cafeína que, según un nuevo experimento científico, ayuda a potenciar nuestra memoria a largo plazo. El estudio, liderado por el investigador Michael Yassa de la Universidad de California (Irvine), ha demostrado que tomar 200 miligramos de cafeína puede mejorar nuestra capacidad de recordar algo más de 24 horas de haberlo visto.</span>
+									<span>De acuerdo a estudios científicos, el Parque Yasuní ubicado en la Región amazónica ecuatoriana, en las provincias de Orellana y Pastaza, es la región de mayor diversidad biológica del mundo. El 20 de noviembre 1979 se declaró al Yasuní como Parque Nacional. Esta declaración se la hace por existir en su interior una riqueza natural que debe ser preservada.</span>
 								</div>
 							</div>
 						</div>
