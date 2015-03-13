@@ -37,7 +37,8 @@
 	<script src="assets/js/hover/jquery-hover-effect.js"></script>
 	<script src="assets/js/hover/setting.js"></script>
 	<script src="assets/js/custom.js"></script>
-
+	<script src="js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.css" />
 	<!-- Efecto renderizado -->
 	<script src="assets/js/contenido.js"></script>
 	<!-- fav and touch icons -->
@@ -53,12 +54,14 @@
 <audio src="audios/tecnologia.mp3" type="audio/mpeg" id="audioTecnologia"></audio>
 <audio src="audios/ciencia.mp3" type="audio/mpeg" id="audioCiencia"></audio>
 <audio src="audios/variedades.mp3" type="audio/mpeg" id="audioVariedades"></audio>
-<audio src="audios/inodoro.mp3" type="audio/mpeg" id="audioInodoro"></audio>
-<audio src="audios/inodoro_inteligente.mp3" type="audio/mpeg" id="audioInodoro_inteligente"></audio>
-<audio src="audios/celulas.mp3" type="audio/mpeg" id="audioCelulas"></audio>
-<audio src="audios/celulas_inteligentes.mp3" type="audio/mpeg" id="audioCelulas_inteligentes"></audio>
-<audio src="audios/cafe.mp3" type="audio/mpeg" id="audioCafe"></audio>
-<audio src="audios/cafe_ca.mp3" type="audio/mpeg" id="audioCafe_ca"></audio>
+<!---->
+<audio src="audios/audio_7.mp3" type="audio/mpeg" id="sonido_7"></audio>
+<audio src="audios/audio_7_1.mp3" type="audio/mpeg" id="sonido_7_1"></audio>
+<audio src="audios/audio_8.mp3" type="audio/mpeg" id="sonido_8"></audio>
+<audio src="audios/audio_8_1.mp3" type="audio/mpeg" id="sonido_8_1"></audio>
+<audio src="audios/audio_9.mp3" type="audio/mpeg" id="sonido_9"></audio>
+<audio src="audios/audio_9_1.mp3" type="audio/mpeg" id="sonido_9_1"></audio>
+<!---->
 <audio src="audios/este_sitio.mp3" type="audio/mpeg" id="audioEste_sitio"></audio>
 <audio src="audios/galeria.mp3" type="audio/mpeg" id="audioGaleria"></audio>
 <audio src="audios/buena_a.mp3" type="audio/mpeg" id="audioBuena_a"></audio>
@@ -74,9 +77,7 @@
 			<!-- top menu -->
 			<div>
 				<nav>
-				<ul class="nav topnav">
-					<li class="dropdown inverse" id="login" data-audio="">
-					<a href="#"><i class="icon-user icon-white"></i> LOGIN</a></li>
+				<ul class="nav topnav">					
 					<li class="dropdown success " id="inicio" data-audio="audioInicio">
 					<a href="index.php"><i class="icon-home icon-white"></i> INICIO</a></li>
 					<li class="dropdown primary" id="tecnologia" data-audio="audioTecnologia">
@@ -149,8 +150,8 @@
 			 <ul class="thumbnails">
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/4.fw.png" alt="" id="inodoro" data-audio="audioInodoro" />
-							<div class="caption" id="inodoro_inteligente" data-audio="audioInodoro_inteligente">
+							<img src="imagenes/img_7.png" alt="" id="audio_7" data-audio="sonido_7" />
+							<div class="caption" id="audio_7_1" data-audio="sonido_7_1">
 								<h3 class="heading-success" >Inodoro Inteligente</h3>
 								<div class="texto">
 									<span>Pocas partes de la casa tienen tantos sinónimos como el inodoro (que dependerán según el país): desde "trono" a retrete, sanitario, etc. Ahora, llega el momento de que este producto se adapte al momento actual, volviéndose "inteligente" y capaz de proporcionarnos información útil sobre nuestra salud.</span>
@@ -160,8 +161,8 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/5.fw.png" alt="" id="celulas" data-audio="audioCelulas"/>
-							<div class="caption" id="celulas_inteligentes" data-audio="audioCelulas_inteligentes">
+							<img src="imagenes/img_8.png" alt="" id="audio_8" data-audio="sonido_8"/>
+							<div class="caption" id="audio_8_1" data-audio="sonido_8_1">
 								<h3 class="heading-success" >Celulas Inteligentes</h3>
 								<div class="texto">
 									<span>Un grupo de ingenieros químicos de la Universidad Estatal de Pennsylvania ha logrado crear los primeros motores sintéticos capaces de operar en una célula viva sin dañarla. Los dispositivos abren la puerta a todo tipo de tratamientos de enfermedades como el cáncer a nivel intracelular.</span>
@@ -171,8 +172,8 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/6.fw.png" alt="" id="cafe" data-audio="audioCafe" />
-							<div class="caption" id="cafe_ca" data-audio="audioCafe_ca">
+							<img src="imagenes/img_9.png" alt="" id="audio_9" data-audio="sonido_9" />
+							<div class="caption" id="audio_9_1" data-audio="sonido_9_1">
 								<h3 class="heading-success" >Cafe - Cafeina</h3>
 								<div class="texto">
 									<span>Dos cafés expreso al día. Es aproximadamente la cantidad de cafeína que, según un nuevo experimento científico, ayuda a potenciar nuestra memoria a largo plazo. El estudio, liderado por el investigador Michael Yassa de la Universidad de California (Irvine), ha demostrado que tomar 200 miligramos de cafeína puede mejorar nuestra capacidad de recordar algo más de 24 horas de haberlo visto.</span>

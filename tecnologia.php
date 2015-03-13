@@ -40,6 +40,8 @@
 	<script src="assets/js/hover/jquery-hover-effect.js"></script>
 	<script src="assets/js/hover/setting.js"></script>
 	<script src="assets/js/custom.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.css" />
 	<!-- fav and touch icons -->
 	<link rel="shortcut icon" href="assets/ico/icon.fw.png" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -51,12 +53,14 @@
 <audio src="audios/tecnologia.mp3" type="audio/mpeg" id="audioTecnologia"></audio>
 <audio src="audios/ciencia.mp3" type="audio/mpeg" id="audioCiencia"></audio>
 <audio src="audios/variedades.mp3" type="audio/mpeg" id="audioVariedades"></audio>
-<audio src="audios/ropa_inteligente.mp3" type="audio/mpeg" id="audioRopa_inteligente"></audio>
-<audio src="audios/en_el_catalogo.mp3" type="audio/mpeg" id="audioEn_el_catalogo"></audio>
-<audio src="audios/descubrimientos.mp3" type="audio/mpeg" id="audioDescubrimientos"></audio>
-<audio src="audios/cientificos.mp3" type="audio/mpeg" id="audioCientificos"></audio>
-<audio src="audios/parque_yasuni.mp3" type="audio/mpeg" id="audioParque_yasuni"></audio>
-<audio src="audios/yasuni.mp3" type="audio/mpeg" id="audioYasuni"></audio>
+<!---->
+<audio src="audios/audio_4.mp3" type="audio/mpeg" id="sonido_4"></audio>
+<audio src="audios/audio_4_1.mp3" type="audio/mpeg" id="sonido_4_1"></audio>
+<audio src="audios/audio_5.mp3" type="audio/mpeg" id="sonido_5"></audio>
+<audio src="audios/audio_5_1.mp3" type="audio/mpeg" id="sonido_5_1"></audio>
+<audio src="audios/audio_6.mp3" type="audio/mpeg" id="sonido_6"></audio>
+<audio src="audios/audio_6_1.mp3" type="audio/mpeg" id="sonido_6_1"></audio>
+<!---->
 <audio src="audios/este_sitio.mp3" type="audio/mpeg" id="audioEste_sitio"></audio>
 <audio src="audios/galeria.mp3" type="audio/mpeg" id="audioGaleria"></audio>
 <audio src="audios/buena_a.mp3" type="audio/mpeg" id="audioBuena_a"></audio>
@@ -74,9 +78,7 @@
 			<!-- top menu -->
 			<div>
 				<nav>
-				<ul class="nav topnav">
-					<li class="dropdown inverse" id="login" data-audio="">
-					<a href="#"><i class="icon-user icon-white"></i> LOGIN</a></li>
+				<ul class="nav topnav">					
 					<li class="dropdown success " id="inicio" data-audio="audioInicio">
 					<a href="index.php"><i class="icon-home icon-white"></i> INICIO</a></li>
 					
@@ -152,8 +154,8 @@
 			 <ul class="thumbnails">
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/1.fw.png" alt="" id="ropa_inteligente" data-audio="audioRopa_inteligente"/>
-							<div class="caption" id="en_el_catalogo" data-audio="audioEn_el_catalogo">
+							<img src="imagenes/img_4.png" alt="" id="audio_4" data-audio="sonido_4"/>
+							<div class="caption" id="audio_4_1" data-audio="sonido_4_1">
 								<h3 class="heading-success">Crean Ropa Inteligente</h3>	
 								<div class="texto" >
 									<span>En el catálogo de un operador de telefonía podemos esperar encontrar exclusivamente a teléfonos inteligentes y dispositivos similares, pero como pensaron que no era suficiente, por lo que se lanzaron a colaborar con Toray, una empresa centrada en el desarrollo de equipos basados en textiles, y hoy anuncian los primeros productos de esta colaboración entre las dos empresas.</span>
@@ -164,8 +166,8 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/3.fw.png" alt="" id="descubrimientos" data-audio="audioDescubrimientos"/>
-							<div class="caption" id="cientificos" data-audio="audioCientificos">
+							<img src="imagenes/img_5.png" alt="" id="audio_5" data-audio="sonido_5"/>
+							<div class="caption" id="audio_5_1" data-audio="sonido_5_1">
 								<h3 class="heading-success" >Descubrimiento</h3>
 								<div class="texto" >
 									<span>Científicos de la Universidad de Columbia han dado un paso importante en la lucha contra un problema estético muy común: la calvicie. La técnica consiste en un trasplante celular que, por primera vez es capaz de generar nuevos cabellos.</span>
@@ -175,8 +177,8 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/2.fw.png" alt="" id="parque_yasuni" data-audio="audioParque_yasuni"/>
-							<div class="caption" id="yasuni" data-audio="audioYasuni">
+							<img src="imagenes/img_6.png" alt="" id="audio_6" data-audio="sonido_6"/>
+							<div class="caption" id="audio_6_1" data-audio="sonido_6_1">
 								<h3 class="heading-success" >Parque Nacional Yasuni ITT</h3>
 								<div class="texto">
 									<span>De acuerdo a estudios científicos, el Parque Yasuní ubicado en la Región amazónica ecuatoriana, en las provincias de Orellana y Pastaza, es la región de mayor diversidad biológica del mundo. El 20 de noviembre 1979 se declaró al Yasuní como Parque Nacional. Esta declaración se la hace por existir en su interior una riqueza natural que debe ser preservada.</span>

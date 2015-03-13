@@ -54,12 +54,14 @@
 <audio src="audios/tecnologia.mp3" type="audio/mpeg" id="audioTecnologia"></audio>
 <audio src="audios/ciencia.mp3" type="audio/mpeg" id="audioCiencia"></audio>
 <audio src="audios/variedades.mp3" type="audio/mpeg" id="audioVariedades"></audio>
-<audio src="audios/viber.mp3" type="audio/mpeg" id="audioViber"></audio>
-<audio src="audios/rakuten.mp3" type="audio/mpeg" id="audioRakuten"></audio>
-<audio src="audios/red_5g.mp3" type="audio/mpeg" id="audioRed_5g"></audio>
-<audio src="audios/mudarse_correa.mp3" type="audio/mpeg" id="audioMudarse_correa"></audio>
-<audio src="audios/windows_xp.mp3" type="audio/mpeg" id="audioWindows_xp"></audio>
-<audio src="audios/microsoft.mp3" type="audio/mpeg" id="audioMicrosoft"></audio>
+<!---->
+<audio src="audios/audio_1.mp3" type="audio/mpeg" id="sonido_1"></audio>
+<audio src="audios/audio_1_1.mp3" type="audio/mpeg" id="sonido_1_1"></audio>
+<audio src="audios/audio_2.mp3" type="audio/mpeg" id="sonido_2"></audio>
+<audio src="audios/audio_2_1.mp3" type="audio/mpeg" id="sonido_2_1"></audio>
+<audio src="audios/audio_3.mp3" type="audio/mpeg" id="sonido_3"></audio>
+<audio src="audios/audio_3_1.mp3" type="audio/mpeg" id="sonido_3_1"></audio>
+<!---->
 <audio src="audios/este_sitio.mp3" type="audio/mpeg" id="audioEste_sitio"></audio>
 <audio src="audios/galeria.mp3" type="audio/mpeg" id="audioGaleria"></audio>
 <audio src="audios/buena_a.mp3" type="audio/mpeg" id="audioBuena_a"></audio>
@@ -188,33 +190,28 @@
 				<div class="row">				
 					<div class="span3">
 						<div class="well well-primary box">
-							<img src="assets/img/icons/box-1-white.png" alt="" id="viber" data-audio="audioViber" />
+							<img src="imagenes/img_1.png" alt="" id="audio_1" data-audio="sonido_1" />
 							<h3>COMPRA VIBER</h3>
-							<p id="rakuten" data-audio="audioRakuten">
-								 Rakuten, el gigante japonés de comercio electrónico
-
-								(  una especie de Amazon local) ha comprado Viber
-
-								por 900 millones de dólares.
+							<p id="audio_1_1" data-audio="sonido_1_1">
+								Rakuten, el gigante japonés de comercio electrónico (  una especie de Amazon local) ha comprado Viber por 900 millones de dólares.
 							</p>							
 						</div>
 					</div>
 					<div class="span3">
 						<div class="well well-success box">
-							<img src="assets/img/icons/box-2-white.png" alt="" id="red_5g" data-audio="audioRed_5g" />
-							<h3>RED 5G</h3>
-							<p id="mudarse_correa" data-audio="audioMudarse_correa">
-								 Mudarse a Corea del Sur en el año 2020 será una muy buena idea. El Ministerio de Educación, Ciencia y Tecnología del país ha anunciado que se invertirán $1500 millones de dólares para desarrollar una nueva tecnología 5G
-
+							<img src="imagenes/img_2.png" alt="" id="audio_2" data-audio="sonido_2" />
+<h3>Nuevo rtitulo<h3>
+							<p id="audio_2_1" data-audio="sonido_2_1">
+nuecvas descuropicoi que se pioighsdf fsdjkgh ern los lagorh ced riempio
 							</p>
 							
 						</div>
 					</div>
 					<div class="span3">
 						<div class="well well-warning box">
-							<img src="assets/img/icons/box-3-white.png" alt="" id="windows_xp" data-audio="audioWindows_xp" />
+							<img src="imagenes/img_3.png" alt="" id="audio_3" data-audio="sonido_3" />
 							<h3>WINDOWS XP</h3>
-							<p id="microsoft" data-audio="audioMicrosoft">
+							<p id="audio_3_1" data-audio="sonido_3_1">
 								 Microsoft hace tiempo que nos viene avisando que en este año 2014 cerrará por completo la puerta a Windows XP tras más de 12 años de servicio.
 							</p>
 							
@@ -301,7 +298,7 @@ hideContent();
           <i class="icon-check icon-white"></i> Limpiar</button>
         </div>        
     </div>
-    <form id="frm_cambios" title="Sleccione la noticia a modificar">
+    <form id="frm_cambios" title="Seleccione la noticia a modificar" method="post" action="procesos/audios.php">    
     	<div id="nivel_1">
 	    	<h3>INICIO</h3>
 	    	<h3>TECNOLOGIA</h3>
@@ -310,24 +307,24 @@ hideContent();
     	</div>
     	<div id="nivel_2">
     		<div>
-    			<input type="radio" name="radio_n1" id="noticia_1" /> Noticia 1
-    			<input type="radio" name="radio_n1" id="noticia_2" /> Noticia 2
-    			<input type="radio" name="radio_n1" id="noticia_3" /> Noticia 3
+    			<input type="radio" name="radio_n1" id="noticia_1" value="img_1" /> Noticia 1
+    			<input type="radio" name="radio_n1" id="noticia_2" value="img_2" /> Noticia 2
+    			<input type="radio" name="radio_n1" id="noticia_3" value="img_3" /> Noticia 3
     		</div>
     		<div>
-    			<input type="radio" name="radio_n1" id="noticia_4" /> Noticia 1
-    			<input type="radio" name="radio_n1" id="noticia_5" /> Noticia 2
-    			<input type="radio" name="radio_n1" id="noticia_6" /> Noticia 3
+    			<input type="radio" name="radio_n1" id="noticia_4" value="img_4" /> Noticia 1
+    			<input type="radio" name="radio_n1" id="noticia_5" value="img_5" /> Noticia 2
+    			<input type="radio" name="radio_n1" id="noticia_6" value="img_6" /> Noticia 3
     		</div>
     		<div>
-    			<input type="radio" name="radio_n1" id="noticia_7" /> Noticia 1
-    			<input type="radio" name="radio_n1" id="noticia_8" /> Noticia 2
-    			<input type="radio" name="radio_n1" id="noticia_9" /> Noticia 3
+    			<input type="radio" name="radio_n1" id="noticia_7" value="img_7"  /> Noticia 1
+    			<input type="radio" name="radio_n1" id="noticia_8" value="img_8" /> Noticia 2
+    			<input type="radio" name="radio_n1" id="noticia_9" value="img_9" /> Noticia 3
     		</div>    	
     		<div>
-    			<input type="radio" name="radio_n1" id="noticia_10" /> Noticia 1
-    			<input type="radio" name="radio_n1" id="noticia_11" /> Noticia 2
-    			<input type="radio" name="radio_n1" id="noticia_12" /> Noticia 3
+    			<input type="radio" name="radio_n1" id="noticia_10" value="img_10" /> Noticia 1
+    			<input type="radio" name="radio_n1" id="noticia_11" value="img_11" /> Noticia 2
+    			<input type="radio" name="radio_n1" id="noticia_12" value="img_12" /> Noticia 3
     		</div>      		
     	</div>
     	<br />
@@ -356,10 +353,10 @@ hideContent();
         </div>
         <br><br>
         <div class="" style="text-align:center">
-          <button class="btn btn-primary" id="btn_guardar" type="submit">
+          <button class="btn btn-primary" id="btn_guardar">
           <i class="icon-check icon-white"></i> Guardar Cambios</button>
           <button class="btn btn-primary" type="button" id="btn_limpiar">
-          <i class="icon-check icon-white"></i> Limpiar</button>
+          <i class="icon-check icon-white"></i> Cerrar</button>
         </div>      
     </form>
 </html>

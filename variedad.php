@@ -40,6 +40,8 @@
 	<script src="assets/js/hover/jquery-hover-effect.js"></script>
 	<script src="assets/js/hover/setting.js"></script>
 	<script src="assets/js/custom.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.css" />
 	<!-- fav and touch icons -->
 	<link rel="shortcut icon" href="assets/ico/icon.fw.png" />
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -53,12 +55,14 @@
 <audio src="audios/tecnologia.mp3" type="audio/mpeg" id="audioTecnologia"></audio>
 <audio src="audios/ciencia.mp3" type="audio/mpeg" id="audioCiencia"></audio>
 <audio src="audios/variedades.mp3" type="audio/mpeg" id="audioVariedades"></audio>
-<audio src="audios/polo.mp3" type="audio/mpeg" id="audioPolo"></audio>
-<audio src="audios/polo_pro.mp3" type="audio/mpeg" id="audioPolo_pro"></audio>
-<audio src="audios/tecnologiaPotable.mp3" type="audio/mpeg" id="audioTecnologiaPotable"></audio>
-<audio src="audios/tecnologia_potable.mp3" type="audio/mpeg" id="audioTecnologia_potable"></audio>
-<audio src="audios/vuelo.mp3" type="audio/mpeg" id="audioVuelo"></audio>
-<audio src="audios/vuelo_aves.mp3" type="audio/mpeg" id="audioVuelo_aves"></audio>
+<!---->
+<audio src="audios/audio_10.mp3" type="audio/mpeg" id="sonido_10"></audio>
+<audio src="audios/audio_10_1.mp3" type="audio/mpeg" id="sonido_10_1"></audio>
+<audio src="audios/audio_11.mp3" type="audio/mpeg" id="sonido_11"></audio>
+<audio src="audios/audio_11_1.mp3" type="audio/mpeg" id="sonido_11_1"></audio>
+<audio src="audios/audio_12.mp3" type="audio/mpeg" id="sonido_12"></audio>
+<audio src="audios/audio_12_1.mp3" type="audio/mpeg" id="sonido_12_1"></audio>
+<!---->
 <audio src="audios/este_sitio.mp3" type="audio/mpeg" id="audioEste_sitio"></audio>
 <audio src="audios/galeria.mp3" type="audio/mpeg" id="audioGaleria"></audio>
 <audio src="audios/buena_a.mp3" type="audio/mpeg" id="audioBuena_a"></audio>
@@ -74,9 +78,7 @@
 			<!-- top menu -->
 			<div>
 				<nav>
-				<ul class="nav topnav">
-					<li class="dropdown inverse" id="login" data-audio="">
-					<a href="#"><i class="icon-user icon-white"></i> LOGIN</a></li>
+				<ul class="nav topnav">					
 					<li class="dropdown success " id="inicio" data-audio="audioInicio">
 					<a href="index.php"><i class="icon-home icon-white"></i> INICIO</a></li>
 					<li class="dropdown primary" id="tecnologia" data-audio="audioTecnologia">
@@ -150,8 +152,8 @@
 			 <ul class="thumbnails">
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/7.fw.png" alt="" id="polo" data-audio="audioPolo"/>
-							<div class="caption" id="polo_pro" data-audio="audioPolo_pro">
+							<img src="imagenes/img_10.png" alt="" id="audio_10" data-audio="sonido_10"/>
+							<div class="caption" id="audio_10_1" data-audio="sonido_10_1">
 								<h3 class="heading-success" >Problemas en el Polo</h3>
 								<div class="texto">
 									<span>Si piensas en el Polo Norte como una superficie sólida de hielo vas a llevarte una sorpresa. Este mes se ha derretido y es ahora un enorme lago de agua muy, muy fría. Suena terrible, pero en realidad no es tan serio como en principio parece.</span>
@@ -161,8 +163,8 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/8.fw.png" alt="" id="tecnologiaPotable" data-audio="audioTecnologiaPotable" />
-							<div class="caption" id="tecnologia_potable" data-audio="audioTecnologia_potable">
+							<img src="imagenes/img_11.png" alt="" id="audio_11" data-audio="sonido_11" />
+							<div class="caption" id="audio_11_1" data-audio="sonido_11_1">
 								<h3 class="heading-success" >Descubrimiento</h3>
 								<div class="texto">
 									<span>Uno de los campos de la nanotecnología donde más se ha investigado es en el de usar micropárticulas de sustancias como el dióxido de titanio como agentes limpiadores del agua. Los nano-carroñeros (nano-scavengers), que es como se denomina a estos agentes químicos, son capaces de destruir bacterias o de adherirse a contaminantes para hacerlos desaparecer del agua. El problema viene cuando hay que deshacerse de los nano-carroñeros.</span>
@@ -172,8 +174,8 @@
 					</li>
 					<li class="span4">
 						<div class="thumbnail">
-							<img src="assets/img/tecnologia/9.fw.png" alt="" id="vuelo" data-audio="audioVuelo" />
-							<div class="caption" id="vuelo_aves" data-audio="audioVuelo_aves">
+							<img src="imagenes/img_12.png" alt="" id="audio_12" data-audio="sonido_12" />
+							<div class="caption" id="audio_12_1" data-audio="sonido_12_1">
 								<h3 class="heading-success" >Vuelo de Aves</h3>
 								<div class="texto">
 									<span>Un grupo de investigadores británicos ha dado con la respuesta científica a uno de los fenómenos más curiosos que a veces vemos surcar el cielo: bandadas de pájaros en formación en V. ¿Por qué en esa forma en concreto y no otra? La conclusión a la que han llegado se resume en dos palabras: aerodinámica y eficiencia. Se sabía que era así, pero ahora lo han probado científicamente. Un hallazgo que se podría aplicar al diseño de la Robótica.</span>
