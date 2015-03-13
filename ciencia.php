@@ -152,9 +152,9 @@
 						<div class="thumbnail">
 							<img src="imagenes/img_7.png" alt="" id="audio_7" data-audio="sonido_7" />
 							<div class="caption" id="audio_7_1" data-audio="sonido_7_1">
-								<h3 class="heading-success" >Inodoro Inteligente</h3>
+<h3 class="heading-success">eeee<h3>
 								<div class="texto">
-									<span>Pocas partes de la casa tienen tantos sinónimos como el inodoro (que dependerán según el país): desde "trono" a retrete, sanitario, etc. Ahora, llega el momento de que este producto se adapte al momento actual, volviéndose "inteligente" y capaz de proporcionarnos información útil sobre nuestra salud.</span>
+<span>qqwe</span>
 								</div>
 							</div>
 						</div>

@@ -165,9 +165,9 @@
 						<div class="thumbnail">
 							<img src="imagenes/img_11.png" alt="" id="audio_11" data-audio="sonido_11" />
 							<div class="caption" id="audio_11_1" data-audio="sonido_11_1">
-								<h3 class="heading-success" >Descubrimiento</h3>
+<h3 class="heading-success">rerrr<h3>
 								<div class="texto">
-									<span>Uno de los campos de la nanotecnología donde más se ha investigado es en el de usar micropárticulas de sustancias como el dióxido de titanio como agentes limpiadores del agua. Los nano-carroñeros (nano-scavengers), que es como se denomina a estos agentes químicos, son capaces de destruir bacterias o de adherirse a contaminantes para hacerlos desaparecer del agua. El problema viene cuando hay que deshacerse de los nano-carroñeros.</span>
+<span>pppppppppppppppppppppppppppppppp weriu e weporuwoe wer</span>
 								</div>
 							</div>
 						</div>

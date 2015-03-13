@@ -191,18 +191,18 @@
 					<div class="span3">
 						<div class="well well-primary box">
 							<img src="imagenes/img_1.png" alt="" id="audio_1" data-audio="sonido_1" />
-							<h3>COMPRA VIBER</h3>
+<h3>q<h3>
 							<p id="audio_1_1" data-audio="sonido_1_1">
-								Rakuten, el gigante japonés de comercio electrónico (  una especie de Amazon local) ha comprado Viber por 900 millones de dólares.
+qweqweqweqweqwedccd
 							</p>							
 						</div>
 					</div>
 					<div class="span3">
 						<div class="well well-success box">
 							<img src="imagenes/img_2.png" alt="" id="audio_2" data-audio="sonido_2" />
-<h3>Nuevo rtitulo<h3>
+							<h3>Red G<h3>
 							<p id="audio_2_1" data-audio="sonido_2_1">
-nuecvas descuropicoi que se pioighsdf fsdjkgh ern los lagorh ced riempio
+								nuecvas descuropicoi que se pioighsdf fsdjkgh ern los lagorh ced riempio
 							</p>
 							
 						</div>
@@ -307,7 +307,7 @@ hideContent();
     	</div>
     	<div id="nivel_2">
     		<div>
-    			<input type="radio" name="radio_n1" id="noticia_1" value="img_1" /> Noticia 1
+    			<input type="radio" checked="" name="radio_n1" id="noticia_1" value="img_1" /> Noticia 1
     			<input type="radio" name="radio_n1" id="noticia_2" value="img_2" /> Noticia 2
     			<input type="radio" name="radio_n1" id="noticia_3" value="img_3" /> Noticia 3
     		</div>

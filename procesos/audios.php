@@ -108,93 +108,111 @@
 	if($_POST['radio_n1'] == 'img_1'){	
 		$fila = 193;	 			
 		$archivo = "../index.php";	
-		$new = '<h3>'.$_POST['txt_titulo'].'<h3>';
+		$new = '<h3>'.$_POST['txt_titulo'].'<h3>';		
 		$fila_1 = 195;
 		$new_1 = $_POST['txt_descripcion'];
+		
 	}
 	if($_POST['radio_n1'] == 'img_2'){	
 		$fila = 202;	 		 	
 		$archivo = "../index.php";	
-		$new = '<h3>'.$_POST['txt_titulo'].'<h3>';
+		$new = '<h3>'.$_POST['txt_titulo'].'<h3>';		
 		$fila_1 = 204;
 		$new_1 = $_POST['txt_descripcion'];
+		
 	}
 	if($_POST['radio_n1'] == 'img_3'){	
 		$fila = 212;	 		 	
 		$archivo = "../index.php";	
-		$new = '<h3>'.$_POST['txt_titulo'].'<h3>';
+		$new = '<h3>'.$_POST['txt_titulo'].'<h3>';		
 		$fila_1 = 214;
 		$new_1 = $_POST['txt_descripcion'];
+		
 	}
 	if($_POST['radio_n1'] == 'img_4'){	
 		$fila = 158;	 		 	
 		$archivo = "../tecnologia.php";	
-		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';
+		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';		
 		$fila_1 = 160;
 		$new_1 = '<span>'.$_POST['txt_descripcion'].'</span>';
+		
+		
 	}	
 	if($_POST['radio_n1'] == 'img_5'){	
 		$fila = 170;	 		 	
 		$archivo = "../tecnologia.php";	
-		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';
+		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';		
 		$fila_1 = 172;
 		$new_1 = '<span>'.$_POST['txt_descripcion'].'</span>';
+		
 	}	
 	if($_POST['radio_n1'] == 'img_6'){	
 		$fila = 181;	 		 	
 		$archivo = "../tecnologia.php";	
-		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';
+		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';		
 		$fila_1 = 183;
 		$new_1 = '<span>'.$_POST['txt_descripcion'].'</span>';
+		
 	}
 	if($_POST['radio_n1'] == 'img_7'){	
 		$fila = 154;	 		 	
 		$archivo = "../ciencia.php";	
-		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';
+		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';		
 		$fila_1 = 156;
 		$new_1 = '<span>'.$_POST['txt_descripcion'].'</span>';
+		
 	}
 	if($_POST['radio_n1'] == 'img_8'){	
 		$fila = 165;	 		 	
 		$archivo = "../ciencia.php";	
-		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';
+		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';		
 		$fila_1 = 167;
 		$new_1 = '<span>'.$_POST['txt_descripcion'].'</span>';
+		
 	}
 	if($_POST['radio_n1'] == 'img_9'){	
 		$fila = 176;	 		 	
 		$archivo = "../ciencia.php";	
-		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';
+		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';		
 		$fila_1 = 178;
 		$new_1 = '<span>'.$_POST['txt_descripcion'].'</span>';
+		
 	}	
 	if($_POST['radio_n1'] == 'img_10'){	
 		$fila = 156;	 		 	
 		$archivo = "../variedad.php";	
-		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';
+		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';		
 		$fila_1 = 158;
 		$new_1 = '<span>'.$_POST['txt_descripcion'].'</span>';
+		
 	}	
 	if($_POST['radio_n1'] == 'img_11'){	
 		$fila = 167;	 		 	
 		$archivo = "../variedad.php";	
-		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';
+		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';		
 		$fila_1 = 169;
 		$new_1 = '<span>'.$_POST['txt_descripcion'].'</span>';
+		
 	}	
 	if($_POST['radio_n1'] == 'img_12'){	
 		$fila = 178;	 		 	
 		$archivo = "../variedad.php";	
-		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';
+		$new = '<h3 class="heading-success">'.$_POST['txt_titulo'].'<h3>';		
 		$fila_1 = 180;
 		$new_1 = '<span>'.$_POST['txt_descripcion'].'</span>';
+		
 	}	
   	$abrir =fopen($archivo,'r+'); 	
-  	$contenido = fread($abrir , filesize($archivo));
-	fclose($abrir);
-	$contenido2 = explode("\r\n", $contenido);
-	$contenido2[$fila] = $new;
-	$contenido2[$fila_1] = $new_1;
+  	$contenido = fread($abrir , filesize($archivo));  	
+	fclose($abrir);	
+	$contenido2 = explode("\r\n", $contenido);				
+	if($_POST['txt_titulo'] != ''){
+		$contenido2[$fila] = $new;
+	}
+	if($_POST['txt_descripcion'] != ''){
+		$contenido2[$fila_1] = $new_1;	
+	}
+	
 	$nuevo = implode("\r\n", $contenido2);    		
 	$abrir = fopen($archivo, 'w+');
 	fwrite($abrir, $nuevo);
